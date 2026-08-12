@@ -1,5 +1,4 @@
 import React from 'react';
-import { MessageSquare, PhoneCall } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -68,12 +67,6 @@ export default function Footer() {
           <p className="copyright-text">
             © {new Date().getFullYear()} RideMoris. All rights reserved. Built for Mauritius Car Rental.
           </p>
-
-          <div className="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <span className="dot">•</span>
-            <a href="#">Terms & Conditions</a>
-          </div>
         </div>
       </div>
     </footer>
