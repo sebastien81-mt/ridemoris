@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
@@ -16,6 +17,15 @@ export default function TermsOfUse() {
     }
   }, []);
 
+  const handleBackToHome = (e) => {
+    e.preventDefault();
+    if (window.location.pathname !== '/') {
+      window.history.pushState({}, '', '/');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="app-layout">
       <Navbar />
@@ -26,6 +36,11 @@ export default function TermsOfUse() {
             
             {/* Header / Title */}
             <div className="terms-header">
+              <a href="/" onClick={handleBackToHome} className="back-home-btn" aria-label="Back to Home">
+                <ArrowLeft size={16} />
+                <span>Back to Home</span>
+              </a>
+
               <div className="eyebrow">
                 <span className="eyebrow-line"></span>
                 <span>LEGAL</span>
