@@ -1,18 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import BookingWidget from './BookingWidget';
 import './Hero.css';
 
 export default function Hero() {
-  useEffect(() => {
-    // Inject official RideMoris booking widget script if not present
-    const existingScript = document.querySelector('script[src="https://book.carhiremauritius.com/rental-widget.js"]');
-    if (!existingScript) {
-      const script = document.createElement('script');
-      script.src = 'https://book.carhiremauritius.com/rental-widget.js';
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-  }, []);
-
   return (
     <section id="hero" className="hero-section">
       {/* Background Image Container with Dark Overlay */}
@@ -46,10 +36,8 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* OFFICIAL INJECTED BOOKING WIDGET CONTAINER */}
-        <div className="booking-widget-container">
-          <div id="wst-rental-widget" data-referer="FbwaL73-4hKKSvz9"></div>
-        </div>
+        {/* OFFICIAL INJECTED BOOKING WIDGET */}
+        <BookingWidget />
 
       </div>
     </section>
