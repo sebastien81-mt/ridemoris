@@ -20,7 +20,6 @@ export default function VehicleCard({ vehicle, onSelect }) {
           className="card-img" 
           loading="lazy"
         />
-        <span className="category-tag">{vehicle.categoryTag}</span>
       </div>
 
       <div className="card-content">
