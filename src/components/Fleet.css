@@ -87,6 +87,16 @@
     align-items: flex-start;
   }
 
+  .category-filters {
+    gap: 8px;
+    width: 100%;
+  }
+
+  .filter-btn {
+    font-size: 0.72rem;
+    padding: 8px 12px;
+  }
+
   .fleet-grid {
     grid-template-columns: 100%;
   }
