@@ -12,7 +12,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '1 Bag',
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-spresso.jpg'
   },
   {
     id: 'celerio',
