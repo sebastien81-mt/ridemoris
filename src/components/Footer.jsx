@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer({ onOpenTerms }) {
+export default function Footer({ onOpenTerms, onOpenPrivacy }) {
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
     const elem = document.getElementById(sectionId);
@@ -16,6 +16,13 @@ export default function Footer({ onOpenTerms }) {
     e.preventDefault();
     if (onOpenTerms) {
       onOpenTerms();
+    }
+  };
+
+  const handlePrivacyClick = (e) => {
+    e.preventDefault();
+    if (onOpenPrivacy) {
+      onOpenPrivacy();
     }
   };
 
@@ -58,6 +65,7 @@ export default function Footer({ onOpenTerms }) {
               <li><a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>FAQ</a></li>
               <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>CONTACT</a></li>
               <li><a href="#terms" onClick={handleTermsClick}>TERMS OF USE</a></li>
+              <li><a href="#privacy" onClick={handlePrivacyClick}>PRIVACY POLICY</a></li>
             </ul>
           </div>
 

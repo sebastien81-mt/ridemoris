@@ -13,9 +13,11 @@ import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import TermsModal from './components/TermsModal';
+import PrivacyModal from './components/PrivacyModal';
 
 export default function App() {
   const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   return (
     <div className="app-layout">
@@ -32,9 +34,13 @@ export default function App() {
         <Contact />
         <FinalCTA />
       </main>
-      <Footer onOpenTerms={() => setIsTermsOpen(true)} />
+      <Footer 
+        onOpenTerms={() => setIsTermsOpen(true)} 
+        onOpenPrivacy={() => setIsPrivacyOpen(true)}
+      />
       <WhatsAppButton />
       <TermsModal isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
+      <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
     </div>
   );
 }
