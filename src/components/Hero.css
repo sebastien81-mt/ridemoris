@@ -101,29 +101,66 @@
   margin: 0 auto;
 }
 
-/* Mobile & Responsive Rules */
+/* Mobile & Responsive Rules for Above-The-Fold Widget Visibility */
 @media (max-width: 992px) {
-  .hero-section {
-    padding-top: 110px;
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 576px) {
   .hero-section {
     padding-top: 100px;
     padding-bottom: 30px;
   }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 86px;
+    padding-bottom: 24px;
+  }
+
+  .hero-header-centered {
+    margin-bottom: 12px;
+  }
+
+  .eyebrow-centered {
+    margin-bottom: 8px;
+  }
 
   .hero-title-centered {
-    font-size: 2.2rem;
+    font-size: clamp(1.6rem, 5.5vw, 2.2rem);
+    margin-bottom: 10px;
+    line-height: 1.05;
   }
 
   .hero-description-centered {
-    font-size: 0.95rem;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    max-width: 92%;
   }
 
   .booking-widget-container {
-    padding: 8px 0;
+    padding: 4px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 82px;
+    padding-bottom: 16px;
+  }
+
+  .eyebrow-centered {
+    margin-bottom: 6px;
+  }
+
+  .hero-title-centered {
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-description-centered {
+    font-size: 0.84rem;
+    line-height: 1.35;
+  }
+
+  .hero-header-centered {
+    margin-bottom: 10px;
   }
 }
