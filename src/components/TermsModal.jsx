@@ -1,46 +1,55 @@
 import React, { useEffect } from 'react';
-import { ArrowLeft } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import WhatsAppButton from '../components/WhatsAppButton';
-import './TermsOfUse.css';
+import { X, ArrowLeft } from 'lucide-react';
+import './TermsModal.css';
 
-export default function TermsOfUse() {
+export default function TermsModal({ isOpen, onClose }) {
   useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = "Terms of Use | RideMoris";
-    
-    // Update meta description dynamically
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute('content', 'Read the Terms of Use governing RideMoris car rental services in Mauritius.');
-    }
-  }, []);
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape' && isOpen) {
+        onClose();
+      }
+    };
 
-  const handleBackToHome = (e) => {
-    e.preventDefault();
-    if (window.location.pathname !== '/') {
-      window.history.pushState({}, '', '/');
-      window.dispatchEvent(new PopStateEvent('popstate'));
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.body.style.overflow = '';
     }
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
 
   return (
-    <div className="app-layout">
-      <Navbar />
-      
-      <main className="terms-page section-padding">
+    <div className="terms-modal-overlay" role="dialog" aria-modal="true" aria-label="Terms of Use">
+      {/* Sticky Modal Header Bar */}
+      <div className="terms-modal-bar">
+        <div className="container terms-bar-inner">
+          <div className="terms-logo">
+            <span className="logo-ride">RIDE</span>
+            <span className="logo-moris">MORIS</span>
+          </div>
+
+          <button onClick={onClose} className="terms-close-btn" aria-label="Close Terms of Use">
+            <ArrowLeft size={16} />
+            <span>Back to Website</span>
+            <X size={18} className="close-x-icon" />
+          </button>
+        </div>
+      </div>
+
+      {/* Main Legal Document Content */}
+      <div className="terms-modal-body section-padding">
         <div className="container">
           <div className="terms-container">
             
             {/* Header / Title */}
             <div className="terms-header">
-              <a href="/" onClick={handleBackToHome} className="back-home-btn" aria-label="Back to Home">
-                <ArrowLeft size={16} />
-                <span>Back to Home</span>
-              </a>
-
               <div className="eyebrow">
                 <span className="eyebrow-line"></span>
                 <span>LEGAL</span>
@@ -158,13 +167,17 @@ export default function TermsOfUse() {
                 </p>
               </section>
 
+              <div className="terms-bottom-action">
+                <button onClick={onClose} className="btn-primary">
+                  <ArrowLeft size={16} />
+                  <span>CLOSE & RETURN TO WEBSITE</span>
+                </button>
+              </div>
+
             </div>
           </div>
         </div>
-      </main>
-
-      <Footer />
-      <WhatsAppButton />
+      </div>
     </div>
   );
 }

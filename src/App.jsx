@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Fleet from './components/Fleet';
@@ -12,24 +12,10 @@ import Contact from './components/Contact';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
-import TermsOfUse from './pages/TermsOfUse';
+import TermsModal from './components/TermsModal';
 
 export default function App() {
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
-
-  useEffect(() => {
-    const handlePopState = () => {
-      setCurrentPath(window.location.pathname);
-    };
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
-
-  const isTermsPage = currentPath === '/terms-and-conditions';
-
-  if (isTermsPage) {
-    return <TermsOfUse />;
-  }
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
 
   return (
     <div className="app-layout">
@@ -46,8 +32,9 @@ export default function App() {
         <Contact />
         <FinalCTA />
       </main>
-      <Footer />
+      <Footer onOpenTerms={() => setIsTermsOpen(true)} />
       <WhatsAppButton />
+      <TermsModal isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
     </div>
   );
 }

@@ -1,24 +1,21 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer() {
-  const navigateTo = (e, path, sectionId) => {
+export default function Footer({ onOpenTerms }) {
+  const scrollToSection = (e, sectionId) => {
     e.preventDefault();
-    if (path === '/terms-and-conditions') {
-      window.history.pushState({}, '', '/terms-and-conditions');
-      window.dispatchEvent(new PopStateEvent('popstate'));
-      window.scrollTo(0, 0);
+    const elem = document.getElementById(sectionId);
+    if (elem) {
+      elem.scrollIntoView({ behavior: 'smooth' });
     } else {
-      if (window.location.pathname !== '/') {
-        window.location.href = sectionId ? `/${sectionId}` : '/';
-      } else if (sectionId) {
-        const elem = document.getElementById(sectionId);
-        if (elem) {
-          elem.scrollIntoView({ behavior: 'smooth' });
-        }
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleTermsClick = (e) => {
+    e.preventDefault();
+    if (onOpenTerms) {
+      onOpenTerms();
     }
   };
 
@@ -55,23 +52,23 @@ export default function Footer() {
           <div className="footer-links-col">
             <h4 className="footer-col-title">NAVIGATION</h4>
             <ul className="footer-links-list">
-              <li><a href="#hero" onClick={(e) => navigateTo(e, '/', 'hero')}>HOME</a></li>
-              <li><a href="#cars" onClick={(e) => navigateTo(e, '/', 'cars')}>CARS & FLEET</a></li>
-              <li><a href="#about" onClick={(e) => navigateTo(e, '/', 'about')}>ABOUT US</a></li>
-              <li><a href="#faq" onClick={(e) => navigateTo(e, '/', 'faq')}>FAQ</a></li>
-              <li><a href="#contact" onClick={(e) => navigateTo(e, '/', 'contact')}>CONTACT</a></li>
-              <li><a href="/terms-and-conditions" onClick={(e) => navigateTo(e, '/terms-and-conditions')}>TERMS OF USE</a></li>
+              <li><a href="#hero" onClick={(e) => scrollToSection(e, 'hero')}>HOME</a></li>
+              <li><a href="#cars" onClick={(e) => scrollToSection(e, 'cars')}>CARS & FLEET</a></li>
+              <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>ABOUT US</a></li>
+              <li><a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>FAQ</a></li>
+              <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>CONTACT</a></li>
+              <li><a href="#terms" onClick={handleTermsClick}>TERMS OF USE</a></li>
             </ul>
           </div>
 
           <div className="footer-links-col">
             <h4 className="footer-col-title">SERVICES</h4>
             <ul className="footer-links-list">
-              <li><a href="#hero" onClick={(e) => navigateTo(e, '/', 'hero')}>Airport Car Pickup</a></li>
-              <li><a href="#hero" onClick={(e) => navigateTo(e, '/', 'hero')}>Hotel Delivery Service</a></li>
-              <li><a href="#cars" onClick={(e) => navigateTo(e, '/', 'cars')}>Automatic Hatchbacks</a></li>
-              <li><a href="#cars" onClick={(e) => navigateTo(e, '/', 'cars')}>Compact SUV Rental</a></li>
-              <li><a href="#cars" onClick={(e) => navigateTo(e, '/', 'cars')}>7-Seater Family Cars</a></li>
+              <li><a href="#hero" onClick={(e) => scrollToSection(e, 'hero')}>Airport Car Pickup</a></li>
+              <li><a href="#hero" onClick={(e) => scrollToSection(e, 'hero')}>Hotel Delivery Service</a></li>
+              <li><a href="#cars" onClick={(e) => scrollToSection(e, 'cars')}>Automatic Hatchbacks</a></li>
+              <li><a href="#cars" onClick={(e) => scrollToSection(e, 'cars')}>Compact SUV Rental</a></li>
+              <li><a href="#cars" onClick={(e) => scrollToSection(e, 'cars')}>7-Seater Family Cars</a></li>
             </ul>
           </div>
         </div>
