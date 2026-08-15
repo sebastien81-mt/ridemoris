@@ -11,15 +11,31 @@ export default function VehicleCard({ vehicle, onSelect }) {
     }
   };
 
+  const isAvif = vehicle.image && vehicle.image.endsWith('.avif');
+  const fallbackJpg = isAvif ? vehicle.image.replace(/\.avif$/, '.jpg') : vehicle.image;
+
   return (
     <div className="vehicle-card">
       <div className="card-image-box">
-        <img 
-          src={vehicle.image} 
-          alt={`${vehicle.name} rental car in Mauritius`} 
-          className="card-img" 
-          loading="lazy"
-        />
+        {isAvif ? (
+          <picture className="card-picture">
+            <source type="image/avif" srcSet={vehicle.image} />
+            <source type="image/jpeg" srcSet={fallbackJpg} />
+            <img 
+              src={fallbackJpg} 
+              alt={`${vehicle.name} rental car in Mauritius`} 
+              className="card-img" 
+              loading="lazy"
+            />
+          </picture>
+        ) : (
+          <img 
+            src={vehicle.image} 
+            alt={`${vehicle.name} rental car in Mauritius`} 
+            className="card-img" 
+            loading="lazy"
+          />
+        )}
       </div>
 
       <div className="card-content">

@@ -13,7 +13,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '1 Bag',
-    image: '/images/suzuki-spresso.jpg'
+    image: '/images/suzuki-spresso.avif'
   },
   {
     id: 'celerio',
@@ -23,7 +23,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/suzuki-celerio.jpg'
+    image: '/images/suzuki-celerio.avif'
   },
   {
     id: 'march',
@@ -33,7 +33,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/nissan-march.jpg'
+    image: '/images/nissan-march.avif'
   },
   {
     id: 'grand-i10',
@@ -43,7 +43,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/hyundai-grand-i10.jpg'
+    image: '/images/hyundai-grand-i10.avif'
   },
   {
     id: 'picanto',
@@ -53,7 +53,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '1 Bag',
-    image: '/images/kia-picanto.jpg'
+    image: '/images/kia-picanto.avif'
   },
   {
     id: 'swift',
@@ -63,7 +63,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/suzuki-swift.jpg'
+    image: '/images/suzuki-swift.avif'
   },
   {
     id: 'baleno',
@@ -73,7 +73,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/suzuki-baleno.jpg'
+    image: '/images/suzuki-baleno.avif'
   },
   {
     id: 'yaris',
@@ -83,7 +83,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/toyota-yaris.jpg'
+    image: '/images/toyota-yaris.avif'
   },
   {
     id: 'vitz',
@@ -93,7 +93,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/toyota-vitz.jpg'
+    image: '/images/toyota-vitz.avif'
   },
   {
     id: 'aqua',
@@ -103,7 +103,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/toyota-aqua.jpg'
+    image: '/images/toyota-aqua.avif'
   },
   {
     id: 'jazz',
@@ -113,7 +113,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: '/images/honda-jazz.jpg'
+    image: '/images/honda-jazz.avif'
   },
   {
     id: 'mirage',
@@ -123,7 +123,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/mitsubishi-mirage.jpg'
+    image: '/images/mitsubishi-mirage.avif'
   },
   {
     id: 'rio',
@@ -133,7 +133,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/kia-rio.jpg'
+    image: '/images/kia-rio.avif'
   },
   {
     id: 'clio',
@@ -143,7 +143,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: '/images/renault-clio.jpg'
+    image: '/images/renault-clio.avif'
   },
   {
     id: 'bezza',
@@ -153,7 +153,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: '/images/perodua-bezza.jpg'
+    image: '/images/perodua-bezza.avif'
   },
   {
     id: 'dzire-2025',
@@ -163,7 +163,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: '/images/suzuki-dzire-2025.jpg'
+    image: '/images/suzuki-dzire-2025.avif'
   },
 
   // ================= SUV (18) =================
