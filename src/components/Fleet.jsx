@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import VehicleCard from './VehicleCard';
 import './Fleet.css';
 
@@ -637,13 +638,27 @@ const FLEET_DATA = [
 ];
 
 const CATEGORIES = ['ALL', 'ECONOMY', 'SUV', '4X4', 'PICK-UP', 'FAMILY', 'PREMIUM'];
+const BATCH_SIZE = 12;
 
 export default function Fleet() {
   const [activeCategory, setActiveCategory] = useState('ALL');
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
 
   const filteredFleet = activeCategory === 'ALL'
     ? FLEET_DATA
     : FLEET_DATA.filter((item) => item.category === activeCategory);
+
+  const displayedFleet = filteredFleet.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredFleet.length;
+
+  const handleCategoryChange = (cat) => {
+    setActiveCategory(cat);
+    setVisibleCount(BATCH_SIZE);
+  };
+
+  const handleShowMore = () => {
+    setVisibleCount((prev) => prev + BATCH_SIZE);
+  };
 
   const scrollToWidget = () => {
     const widgetElem = document.getElementById('hero');
@@ -670,7 +685,7 @@ export default function Fleet() {
             {CATEGORIES.map((cat) => (
               <button
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => handleCategoryChange(cat)}
                 className={`filter-btn ${activeCategory === cat ? 'active' : ''}`}
               >
                 {cat}
@@ -681,10 +696,20 @@ export default function Fleet() {
 
         {/* Fleet Grid */}
         <div className="fleet-grid">
-          {filteredFleet.map((vehicle) => (
+          {displayedFleet.map((vehicle) => (
             <VehicleCard key={vehicle.id} vehicle={vehicle} />
           ))}
         </div>
+
+        {/* Show More Button */}
+        {hasMore && (
+          <div className="fleet-show-more-wrapper">
+            <button onClick={handleShowMore} className="btn-show-more" aria-label="Show more vehicles">
+              <span>SHOW MORE</span>
+              <ChevronDown size={18} />
+            </button>
+          </div>
+        )}
 
         {/* Bottom Callout */}
         <div className="fleet-bottom-bar">
