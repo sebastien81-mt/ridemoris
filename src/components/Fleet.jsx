@@ -83,7 +83,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=800&q=80'
+    image: '/images/toyota-yaris.jpg'
   },
   {
     id: 'vitz',
