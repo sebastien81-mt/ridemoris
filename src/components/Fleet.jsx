@@ -42,7 +42,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80'
+    image: '/images/hyundai-grand-i10.jpg'
   },
   {
     id: 'picanto',
