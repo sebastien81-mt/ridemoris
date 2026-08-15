@@ -163,7 +163,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-dzire-2025.jpg'
   },
 
   // ================= SUV (18) =================
