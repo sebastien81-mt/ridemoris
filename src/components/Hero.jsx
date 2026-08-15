@@ -27,12 +27,11 @@ export default function Hero() {
           </div>
 
           <h1 className="hero-title-centered">
-            EXPLORE MAURITIUS<br />
-            <span className="hero-highlight">YOUR WAY</span>
+            EXPLORE MAURITIUS <span className="hero-highlight">YOUR WAY</span>
           </h1>
 
           <p className="hero-description-centered">
-            Discover Mauritius at your own pace with RideMoris. Easy booking, reliable vehicles, airport pickup, and island-wide delivery.
+            Easy booking, reliable vehicles, airport pickup, and island-wide delivery.
           </p>
         </div>
 
