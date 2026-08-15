@@ -153,7 +153,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80'
+    image: '/images/perodua-bezza.jpg'
   },
   {
     id: 'dzire-2025',
