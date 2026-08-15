@@ -53,7 +53,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '1 Bag',
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80'
+    image: '/images/kia-picanto.jpg'
   },
   {
     id: 'swift',
