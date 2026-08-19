@@ -638,7 +638,7 @@ const FLEET_DATA = [
 ];
 
 const CATEGORIES = ['ALL', 'ECONOMY', 'SUV', '4X4', 'PICK-UP', 'FAMILY', 'PREMIUM'];
-const BATCH_SIZE = 12;
+const BATCH_SIZE = 9;
 
 export default function Fleet() {
   const [activeCategory, setActiveCategory] = useState('ALL');
