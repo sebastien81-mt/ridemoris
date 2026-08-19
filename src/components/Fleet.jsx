@@ -205,7 +205,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/toyota-raize.avif'
   },
   {
     id: 'exter',
@@ -215,7 +215,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '2 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/hyundai-exter.avif'
   },
   {
     id: 'rush',
