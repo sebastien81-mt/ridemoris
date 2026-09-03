@@ -87,6 +87,23 @@ export default function Navbar() {
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="mobile-link">ABOUT US</a>
           <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')} className="mobile-link">FAQ</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="mobile-link">CONTACT</a>
+          <a 
+            href="https://wa.me/23052557779" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onClick={() => setMobileMenuOpen(false)}
+            className="mobile-link mobile-whatsapp-link"
+            aria-label="WhatsApp"
+          >
+            <img 
+              src="/images/whatsapp.avif" 
+              alt="WhatsApp" 
+              className="mobile-whatsapp-icon" 
+              width="28" 
+              height="28" 
+            />
+            <span>WHATSAPP</span>
+          </a>
         </div>
       </div>
     </header>

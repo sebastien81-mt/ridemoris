@@ -164,6 +164,20 @@
   color: var(--accent-orange);
 }
 
+.mobile-whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Responsive Media Queries for Mobile/Tablet */
 @media (max-width: 992px) {
   .navbar-nav {
