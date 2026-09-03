@@ -1,35 +1,14 @@
-import React, { useState } from 'react';
-import { MapPin, Mail, Phone, Send, CheckCircle } from 'lucide-react';
+import React from 'react';
+import { MapPin, Mail, Phone, Clock } from 'lucide-react';
 import './Contact.css';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-    }, 4000);
-  };
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
   return (
     <section id="contact" className="contact-section section-padding">
       <div className="container">
         <div className="contact-grid">
           {/* Left Column: Brand & Contact Info */}
-          <div className="contact-info-column">
+          <div className="contact-brand-column">
             <div className="contact-brand">
               <span className="logo-ride">RIDE</span>
               <span className="logo-moris">MORIS</span>
@@ -92,91 +71,33 @@ export default function Contact() {
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
-          {/* Right Column: Dark Form */}
-          <div className="contact-form-column">
-            <div className="eyebrow">
-              <span className="eyebrow-line"></span>
-              <span>GET IN TOUCH</span>
-            </div>
-            <h3 className="form-title">SEND US A MESSAGE</h3>
-
-            {submitted ? (
-              <div className="form-success-alert">
-                <CheckCircle size={24} />
+          {/* Right Column: Contact Information / Operating Hours */}
+          <div className="contact-info-column">
+            <h3 className="hours-title">Opening Hours</h3>
+            <div className="info-block-group">
+              <div className="info-item">
+                <div className="info-icon-box">
+                  <Clock size={18} />
+                </div>
                 <div>
-                  <h4>Message Sent Successfully!</h4>
-                  <p>Thank you for contacting RideMoris. Our team will reply shortly.</p>
+                  <h4 className="info-label">Island-Wide Delivery &amp; Recovery:{' '}</h4>
+                  <p className="info-val">Monday–Friday: 8:30 AM–7:00 PM</p>
                 </div>
               </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
-                  <label htmlFor="name" className="form-label">YOUR NAME</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="e.g. Jean Dupont" 
-                    required 
-                    className="form-input"
-                  />
+
+              <div className="info-item">
+                <div className="info-icon-box">
+                  <Clock size={18} />
                 </div>
-
-                <div className="form-row-2">
-                  <div className="form-group">
-                    <label htmlFor="email" className="form-label">EMAIL ADDRESS</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      name="email" 
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="name@example.com" 
-                      required 
-                      className="form-input"
-                    />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="phone" className="form-label">PHONE / WHATSAPP</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
-                      name="phone" 
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="+230..." 
-                      className="form-input"
-                    />
-                  </div>
+                <div>
+                  <h4 className="info-label">Airport Delivery &amp; Pick-Up:{' '}</h4>
+                  <p className="info-val">Available 24/7</p>
                 </div>
-
-                <div className="form-group">
-                  <label htmlFor="message" className="form-label">MESSAGE</label>
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    rows="4" 
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell us about your rental dates, preferred vehicle, or questions..." 
-                    required 
-                    className="form-input form-textarea"
-                  ></textarea>
-                </div>
-
-                <button type="submit" className="btn-primary form-submit-btn">
-                  <span>SEND MESSAGE</span>
-                  <Send size={16} />
-                </button>
-              </form>
-            )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
