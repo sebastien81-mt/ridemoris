@@ -245,7 +245,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mitsubishi-outlander-sport.avif'
   },
   {
     id: 'vezel',
