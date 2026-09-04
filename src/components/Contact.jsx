@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Mail, Phone, Clock } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, Plane } from 'lucide-react';
 import './Contact.css';
 
 export default function Contact() {
@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="container">
         <div className="contact-grid">
           {/* Left Column: Brand & Contact Info */}
-          <div className="contact-brand-column">
+          <div className="contact-info-column">
             <div className="contact-brand">
               <span className="logo-ride">RIDE</span>
               <span className="logo-moris">MORIS</span>
@@ -74,26 +74,33 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Column: Contact Information / Operating Hours */}
+          {/* Right Column: Opening Hours */}
           <div className="contact-info-column">
-            <h3 className="hours-title">Opening Hours</h3>
+            <div className="eyebrow">
+              <span className="eyebrow-line"></span>
+              <span>SCHEDULE & AVAILABILITY</span>
+            </div>
+            <h3 className="section-subtitle-hours">Opening Hours</h3>
+
             <div className="info-block-group">
+              {/* Island-Wide Delivery & Recovery */}
               <div className="info-item">
                 <div className="info-icon-box">
                   <Clock size={18} />
                 </div>
                 <div>
-                  <h4 className="info-label">Island-Wide Delivery &amp; Recovery:{' '}</h4>
+                  <h4 className="info-label">ISLAND-WIDE DELIVERY & RECOVERY</h4>
                   <p className="info-val">Monday–Friday: 8:30 AM–7:00 PM</p>
                 </div>
               </div>
 
+              {/* Airport Delivery & Pick-Up */}
               <div className="info-item">
                 <div className="info-icon-box">
-                  <Clock size={18} />
+                  <Plane size={18} />
                 </div>
                 <div>
-                  <h4 className="info-label">Airport Delivery &amp; Pick-Up:{' '}</h4>
+                  <h4 className="info-label">AIRPORT DELIVERY & PICK-UP</h4>
                   <p className="info-val">Available 24/7</p>
                 </div>
               </div>

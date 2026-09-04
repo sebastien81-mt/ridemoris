@@ -5,12 +5,12 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
 }
 
-/* Left Column */
-.contact-brand-column {
+/* Columns */
+.contact-info-column {
   padding-right: 20px;
 }
 
@@ -41,6 +41,16 @@
   line-height: 1.6;
   margin-bottom: 40px;
   max-width: 440px;
+}
+
+.section-subtitle-hours {
+  font-family: var(--font-headline);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-top: 8px;
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
 }
 
 .info-block-group {
@@ -93,27 +103,12 @@
   color: var(--accent-orange);
 }
 
-/* Right Info Column (Operating Hours) - matches .contact-brand-column */
-.contact-info-column {
-  padding-right: 20px;
-}
-
-.hours-title {
-  font-family: var(--font-headline);
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: #FFFFFF;
-  margin-bottom: 28px;
-  letter-spacing: -0.02em;
-}
-
 @media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 100%;
     gap: 40px;
   }
 
-  .contact-brand-column,
   .contact-info-column {
     padding-right: 0;
   }
