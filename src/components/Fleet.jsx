@@ -275,7 +275,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/hyundai-creta.avif'
   },
   {
     id: 'captur',
@@ -285,7 +285,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/renault-captur.avif'
   },
   {
     id: 'cx3',
@@ -295,7 +295,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mazda-cx-3.avif'
   },
   {
     id: 'aruz',
@@ -305,7 +305,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/perodua-aruz.avif'
   },
   {
     id: 'jolion',
@@ -315,7 +315,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/haval-jolion.avif'
   },
   {
     id: 'sportage',
@@ -325,7 +325,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/kia-sportage.avif'
   },
   {
     id: 'eclipse-cross',
@@ -335,7 +335,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mitsubishi-eclipse-cross.avif'
   },
   {
     id: 'tucson',
@@ -419,7 +419,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/changan-hunter.avif'
   },
 
   // ================= FAMILY (9) =================
