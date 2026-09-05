@@ -345,7 +345,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/hyundai-tucson.avif'
   },
 
   // ================= 4X4 (2) =================
@@ -357,7 +357,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '2 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-jimny.avif'
   },
   {
     id: 'jetour-t2',
@@ -367,7 +367,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/jetour-t2.avif'
   },
 
   // ================= PICK-UP (5) =================
@@ -379,7 +379,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/toyota-hilux.avif'
   },
   {
     id: 'triton',
@@ -389,7 +389,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mitsubishi-triton.avif'
   },
   {
     id: 'bt50',
@@ -399,7 +399,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mazda-bt-50.avif'
   },
   {
     id: 'ranger-xlt',
@@ -409,7 +409,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/ford-ranger-xlt.avif'
   },
   {
     id: 'hunter',
@@ -431,7 +431,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-ciaz.avif'
   },
   {
     id: 'virtus',
@@ -441,7 +441,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/volkswagen-virtus.avif'
   },
   {
     id: 'mg5',
@@ -451,7 +451,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mg-5.avif'
   },
   {
     id: 'ertiga',
@@ -461,7 +461,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-ertiga.avif'
   },
   {
     id: 'xl6',
@@ -471,7 +471,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 6,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/suzuki-xl6.avif'
   },
   {
     id: 'sienta',
@@ -481,7 +481,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/toyota-sienta.avif'
   },
   {
     id: 'xpander',
