@@ -491,7 +491,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mitsubishi-xpander.avif'
   },
   {
     id: 'xpander-cross',
@@ -501,7 +501,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mitsubishi-xpander-cross.avif'
   },
   {
     id: 'carens',
@@ -511,7 +511,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/kia-carens.avif'
   },
 
   // ================= PREMIUM (12) =================
@@ -523,7 +523,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 4,
     luggage: '2 Bags',
-    image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mini-cooper-convertible.avif'
   },
   {
     id: 'cla-180',
@@ -533,7 +533,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mercedes-cla-180.avif'
   },
   {
     id: 'gle-450',
@@ -543,7 +543,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mercedes-gle-450.avif'
   },
   {
     id: 'v-class',
@@ -553,7 +553,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '6 Bags',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80'
+    image: '/images/mercedes-v-class.avif'
   },
   {
     id: 'bmw-x1-2021',
@@ -563,7 +563,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-x1-2021.avif'
   },
   {
     id: 'bmw-x3',
@@ -573,7 +573,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-x3.avif'
   },
   {
     id: 'bmw-x5',
@@ -583,7 +583,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-x5.avif'
   },
   {
     id: 'bmw-x7',
@@ -593,7 +593,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 7,
     luggage: '5 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-x7.avif'
   },
   {
     id: 'bmw-3-series',
@@ -603,7 +603,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '3 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-3-series.avif'
   },
   {
     id: 'bmw-5-series',
@@ -613,7 +613,7 @@ const FLEET_DATA = [
     transmission: 'AUTOMATIC',
     seats: 5,
     luggage: '4 Bags',
-    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80'
+    image: '/images/bmw-5-series.avif'
   },
   {
     id: 'bmw-7-series',
