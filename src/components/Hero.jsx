@@ -25,7 +25,7 @@ export default function Hero() {
             alt="RideMoris vehicle driving on Mauritius coastal road" 
             className="hero-bg-image" 
             loading="eager"
-            fetchPriority="high"
+            fetchpriority="high"
             decoding="async"
           />
         </picture>

@@ -196,15 +196,5 @@ a {
 /* Widget CSS Protection & Styling */
 #wst-rental-widget {
   width: 100%;
-  min-height: 250px;
 }
 
-/* Make sure booking widget input styles don't conflict with site */
-#booking-widget-container {
-  background: #111111;
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-}

@@ -1,3 +1,4 @@
+/* Container for WST injected car rental booking widget */
 .booking-widget-container {
   width: 100%;
   max-width: 960px;
@@ -5,4 +6,13 @@
   min-height: 240px;
   position: relative;
   z-index: 10;
+  /* Ensure the datepicker dropdown calendar is not clipped */
+  overflow: visible;
+}
+
+#wst-rental-widget {
+  width: 100%;
+  margin: 0 auto;
+  /* Allow shadow DOM popup contents (datepicker calendar) to overflow cleanly */
+  overflow: visible;
 }

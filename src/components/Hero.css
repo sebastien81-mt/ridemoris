@@ -7,7 +7,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  /* Allow dropdown popups (such as the booking widget datepicker calendar) to overflow outside the hero section */
+  overflow: visible;
+  /* Ensure hero section and overflowing popups stack above subsequent sections like .fleet-section */
+  z-index: 20;
 }
 
 /* Full-width Background Image & Dark Overlay */
@@ -18,6 +21,7 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  overflow: hidden; /* Keep background image confined to hero boundary */
 }
 
 .hero-bg-picture {
