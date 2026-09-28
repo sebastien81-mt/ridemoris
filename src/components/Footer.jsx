@@ -61,6 +61,7 @@ export default function Footer({ onOpenTerms, onOpenPrivacy }) {
             <ul className="footer-links-list">
               <li><a href="#hero" onClick={(e) => scrollToSection(e, 'hero')}>HOME</a></li>
               <li><a href="#cars" onClick={(e) => scrollToSection(e, 'cars')}>CAR RENTAL</a></li>
+              <li><a href="#transfers" onClick={(e) => scrollToSection(e, 'transfers')}>TRANSFERS</a></li>
               <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')}>ABOUT US</a></li>
               <li><a href="#faq" onClick={(e) => scrollToSection(e, 'faq')}>FAQ</a></li>
               <li><a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>CONTACT</a></li>

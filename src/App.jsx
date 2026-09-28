@@ -5,6 +5,7 @@ import Fleet from './components/Fleet';
 import About from './components/About';
 import WhyUs from './components/WhyUs';
 import HowItWorks from './components/HowItWorks';
+import Transfers from './components/Transfers';
 import MauritiusExperience from './components/MauritiusExperience';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -28,6 +29,7 @@ export default function App() {
         <About />
         <WhyUs />
         <HowItWorks />
+        <Transfers />
         <MauritiusExperience />
         <Testimonials />
         <FAQ />

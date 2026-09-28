@@ -1,0 +1,121 @@
+.transfers-section {
+  background-color: var(--bg-main);
+  position: relative;
+  scroll-margin-top: 80px;
+}
+
+.transfers-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.transfers-header .eyebrow {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.transfers-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+.transfers-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.transfers-widget-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 240px;
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+}
+
+#wst-transfers-widget {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+/* Transfers How It Works Steps Block */
+.transfers-how-block {
+  margin-top: 70px;
+  padding-top: 60px;
+  border-top: 1px solid var(--border-light);
+}
+
+.transfers-how-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.transfers-how-header .eyebrow {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.transfers-how-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.transfers-how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.transfers-how-card {
+  position: relative;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-light);
+  padding: 36px 30px;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.transfers-how-card:hover {
+  border-color: var(--border-orange);
+}
+
+.transfers-how-card .how-card-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.transfers-how-card .how-step-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.transfers-how-card .how-step-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .transfers-how-grid {
+    grid-template-columns: 100%;
+    gap: 24px;
+  }
+}

@@ -58,6 +58,7 @@ export default function Navbar() {
         <nav className="navbar-nav" aria-label="Main Navigation">
           <a href="#hero" onClick={(e) => scrollToSection(e, 'hero')} className="nav-link">HOME</a>
           <a href="#cars" onClick={(e) => scrollToSection(e, 'cars')} className="nav-link">CAR RENTAL</a>
+          <a href="#transfers" onClick={(e) => scrollToSection(e, 'transfers')} className="nav-link">TRANSFERS</a>
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="nav-link">ABOUT US</a>
           <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')} className="nav-link">FAQ</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="nav-link">CONTACT</a>
@@ -84,6 +85,7 @@ export default function Navbar() {
         <div className="mobile-menu-inner">
           <a href="#hero" onClick={(e) => scrollToSection(e, 'hero')} className="mobile-link">HOME</a>
           <a href="#cars" onClick={(e) => scrollToSection(e, 'cars')} className="mobile-link">CAR RENTAL</a>
+          <a href="#transfers" onClick={(e) => scrollToSection(e, 'transfers')} className="mobile-link">TRANSFERS</a>
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="mobile-link">ABOUT US</a>
           <a href="#faq" onClick={(e) => scrollToSection(e, 'faq')} className="mobile-link">FAQ</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="mobile-link">CONTACT</a>

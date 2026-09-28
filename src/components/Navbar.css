@@ -66,6 +66,7 @@
   color: #CCCCCC;
   transition: color var(--transition-fast);
   position: relative;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -179,6 +180,12 @@
 }
 
 /* Responsive Media Queries for Mobile/Tablet */
+@media (max-width: 1180px) {
+  .navbar-nav {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-nav {
     display: none;
